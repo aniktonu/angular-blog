@@ -1,0 +1,14 @@
+<h2>Bangla Book List</h2>
+<button (click)="handleClick()"  [disabled]="isShow">Show Books</button>
+
+
+<ul>
+    <li>
+        <img [src]="source" [alt]="title" width="100px" />
+        {{title}}  by  {{author}}
+    </li>
+    <li>
+        <img [src]="source2" [alt]="title2" width="100px" />
+        {{title2}}  by  {{author2}}
+    </li>
+</ul>
