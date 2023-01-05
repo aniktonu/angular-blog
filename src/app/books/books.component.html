@@ -1,14 +1,19 @@
-<h2>Bangla Book List</h2>
-<button (click)="handleClick()"  [disabled]="isShow">Show Books</button>
+
+<h1>Programming Book List </h1>
+<button [disabled]="isShow" (click)="showEvent()" >Show Books</button>
+<input type="text" [(ngModel)]="myName" />
+<br>
+{{myName}}
+
 
 
 <ul>
     <li>
-        <img [src]="source" [alt]="title" width="100px" />
-        {{title}}  by  {{author}}
+       <img [src]="src" alt="{{title}}" width="100">
+       {{title}} by {{author}}
     </li>
     <li>
-        <img [src]="source2" [alt]="title2" width="100px" />
-        {{title2}}  by  {{author2}}
-    </li>
+        <img [src]="src2" alt="{{title2}}" width="100">
+        {{title2}} by {{author2}}
+     </li>
 </ul>

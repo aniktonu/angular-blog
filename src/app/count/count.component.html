@@ -1,0 +1,24 @@
+<div class="count">
+<p>count works!</p>
+<h1>{{count}}</h1>
+<br>
+<button (click)="[increment(),handleClick()]">Increment</button>
+<button (click)="[decrement(),handleClick()]">Decrement</button><br>
+<button *ngIf="count > 0" (click)="reset()">Reset</button>
+<br>
+
+<table>
+    <tr>
+        <th>List of All Values!</th>
+    </tr>
+    <tr>
+        <!-- <td *ngFor="let value of values">{{value}}</td> -->
+    </tr>
+</table>
+
+
+
+</div>
+
+
+
